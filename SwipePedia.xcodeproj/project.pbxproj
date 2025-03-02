@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8878BBE32D629B8B00B81BCF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8878BBE22D629B8B00B81BCF /* FirebaseAnalytics */; };
+		8878BBE52D629B8B00B81BCF /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8878BBE42D629B8B00B81BCF /* FirebaseCrashlytics */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		8878BB9D2D6288BD00B81BCF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +34,30 @@
 		8878BBA62D6288BD00B81BCF /* SwipePediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipePediaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8878BBDF2D629AEC00B81BCF /* Exceptions for "SwipePedia" folder in "SwipePediaTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = 8878BB9B2D6288BD00B81BCF /* SwipePediaTests */;
+		};
+		8878BBE02D629AEC00B81BCF /* Exceptions for "SwipePedia" folder in "SwipePediaUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = 8878BBA52D6288BD00B81BCF /* SwipePediaUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8878BB8E2D6288BC00B81BCF /* SwipePedia */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8878BBDF2D629AEC00B81BCF /* Exceptions for "SwipePedia" folder in "SwipePediaTests" target */,
+				8878BBE02D629AEC00B81BCF /* Exceptions for "SwipePedia" folder in "SwipePediaUITests" target */,
+			);
 			path = SwipePedia;
 			sourceTree = "<group>";
 		};
@@ -52,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8878BBE32D629B8B00B81BCF /* FirebaseAnalytics in Frameworks */,
+				8878BBE52D629B8B00B81BCF /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +140,8 @@
 			);
 			name = SwipePedia;
 			packageProductDependencies = (
+				8878BBE22D629B8B00B81BCF /* FirebaseAnalytics */,
+				8878BBE42D629B8B00B81BCF /* FirebaseCrashlytics */,
 			);
 			productName = SwipePedia;
 			productReference = 8878BB8C2D6288BC00B81BCF /* SwipePedia.app */;
@@ -192,9 +222,17 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
+				de,
+				es,
+				it,
+				fr,
 			);
 			mainGroup = 8878BB832D6288BC00B81BCF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8878BBE12D629B8B00B81BCF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8878BB8D2D6288BC00B81BCF /* Products */;
 			projectDirPath = "";
@@ -558,6 +596,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8878BBE12D629B8B00B81BCF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8878BBE22D629B8B00B81BCF /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8878BBE12D629B8B00B81BCF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		8878BBE42D629B8B00B81BCF /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8878BBE12D629B8B00B81BCF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8878BB842D6288BC00B81BCF /* Project object */;
 }

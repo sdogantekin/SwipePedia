@@ -1,0 +1,31 @@
+// Tabs
+"Discover" = "Discover";
+"Bookmarks" = "Bookmarks";
+"Settings" = "Settings";
+
+// Settings
+"Appearance" = "Appearance";
+"Dark Mode" = "Dark Mode";
+"Language" = "Language";
+"Content Language" = "Content Language";
+"Data" = "Data";
+"Clear Saved Articles" = "Clear Saved Articles";
+"About" = "About";
+"Contact Developer" = "Contact Developer";
+
+// Alerts
+"Clear All" = "Clear All";
+"Cancel" = "Cancel";
+"Are you sure you want to clear all saved articles? This action cannot be undone." = "Are you sure you want to clear all saved articles? This action cannot be undone.";
+
+// Empty States
+"No more articles to show" = "No more articles to show";
+"Loading articles..." = "Loading articles...";
+"No Bookmarks Yet" = "No Bookmarks Yet";
+"Articles you bookmark will appear here" = "Articles you bookmark will appear here";
+
+// New additions
+"Error" = "Error";
+"OK" = "OK";
+"Unknown error occurred" = "Unknown error occurred";
+"Article bookmarked!" = "Article bookmarked!"; 
